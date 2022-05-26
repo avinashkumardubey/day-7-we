@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+        text-align:center;
+    }
+    p{
+        text-align:center;
+    }
+    #container{
+        display:flex;
+        
+        
+        height:300px;
+        
+    }
+    #container>div{
+        background-color:papayawhip;
+        width: 33%;
+        height:300px;
+        
+        
+    }
+    div>h4{
+        text-align:center;
+    }
+    div>h1{
+        color:green;
+    }
+    div>button{
+        border:1px solid blue;
+        color:blue;
+        padding: center;
+    }
+    #ram>h1{
+   color: orangered;
+    }
+    #ram>button{
+        backgroung-color:blue;
+    }
+    #nam>h1{
+        color:blue;
+    }
+    #ram{
+        margin-left:10px;
+        margin-right:10px;
+    }
+
+    @media all and (min-width:420px) and (max-width:620px)
+    {
+        grid-template-coloumns:repear(2,1fr);
+
+    }
+    @mmedia all and (min-width:220px) and (max-width:420px)
+    {
+        grid-template-columns:(3,1fr);
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Choose a plan that right for your business</h1>
+    <p>We collect review from our users so you can getan honest
+        opinion of what an experience with our website are really like!
+    </p>
+    <div id="container">
+        <div>
+            <h4>starter plan</h4>
+            <h1>free</h1>
+            <p>per month</p>
+            <p>We collect reviews from our users so you can get
+                an honest opinion of what an experience with
+                our website.
+            </p>
+            <button>Start Now</button>
+        </div>
+        <div id="ram">
+            <h4>Business Plan</h4>
+            <h1>$39.00</h1>
+            <p>per month</p>
+            <p>We collect reviews from our users so you can get
+                an honest opinion of what an experience with
+                our website.
+            </p>
+            <button>Start Now</button>
+        </div>
+        <div id="nam">
+            <h4>Premium Plan</h4>
+            <h1>$59.00</h1>
+            <p>per month</p>
+            <p>We collect reviews from our users so you can get
+                an honest opinion of what an experience with
+                our website.
+            </p>
+            <button>Start Now</button>
+        </div>
+    </div>
+</body>
+</html>
